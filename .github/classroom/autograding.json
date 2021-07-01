@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Test",
+      "setup": "make phone_book && sudo -H pip3 install pytest && sudo apt-get install valgrind",
+      "run": "pytest -sv test_phone_book.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
