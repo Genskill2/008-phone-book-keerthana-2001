@@ -68,7 +68,7 @@ int main(int argc, char *argv[]) {
    }
    FILE *fp = open_db_file();
    char *name = argv[2];
-    if(!(search(fp,name)){
+    if(!(search(fp,name))){
      printf("no match\n");
       fclose(fp);
       exit(1);
