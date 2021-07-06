@@ -255,7 +255,7 @@ int delete(FILE *db_file, char *name) {
 
       /* TBD */
     }
-  }
+  
   write_all_entries(base);
   free_entries(base);
   return deleted;
