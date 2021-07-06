@@ -200,7 +200,7 @@ void list(FILE *db_file) {
     p=p->next;
     count++;
   }
-  printf("Total entries : %i\n",count);
+  printf("Total entries : %d\n",count);
   /* TBD print total count */
   free_entries(base);
 }
