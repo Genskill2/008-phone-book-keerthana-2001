@@ -67,7 +67,12 @@ int main(int argc, char *argv[]) {
     exit(1);
    }
    FILE *fp = open_db_file();
-   search(fp,argv[2]);
+   char *name = argv[2];
+    if(!(search(fp,name)){
+     printf("no match\n");
+      fclose(fp);
+      exit(1);
+    }
    fclose(fp);
    exit(0); /* TBD  */
   } else if (strcmp(argv[1], "delete") == 0) {  /* Handle delete */
@@ -206,7 +211,7 @@ int search(FILE *db_file,char *name){
  int i=0;
  while(p!=NULL){
   if(strcmp(p->name,name) == 0){
-   printf("%20s\n",p->phone);
+   printf("%s\n",p->phone);
    i=1; 
   }
   p=p->next;
